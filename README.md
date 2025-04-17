@@ -10,10 +10,10 @@ The app should be ready to go once you clone the repository;
 
 Here are the steps:
 1. Download Docker
-2. Download ollama
+2. Download ollama; and get the model you prefer e.g. `ollama pull llama2`
 3. Download Neo4j
 4. create a `.env` file; copy contents from `env.example` to the `.env` file; change `EMBEDDING_MODEL=ollama`
-5. on the directory type `docker compose --build`
+5. on the directory type `docker compose up --build`
 6. Go to the listed localhost and you should see the chat interface!!
 7. Don't forget to type `docker compose down` once you are done using the app.
 
