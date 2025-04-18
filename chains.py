@@ -24,6 +24,12 @@ def load_embedding_model(embedding_model_name: str, logger=BaseLogger(), config=
         )
         dimension = 4096
         logger.info("Embedding: Using Ollama")
+    if embedding_model_name == "all-minilm":
+        embeddings = OllamaEmbeddings(
+            base_url=config["ollama_base_url"], model="all-minilm"
+        )
+        dimension = 384
+        logger.info("Embedding: Using Ollama")
     elif embedding_model_name == "openai":
         embeddings = OpenAIEmbeddings()
         dimension = 1536
