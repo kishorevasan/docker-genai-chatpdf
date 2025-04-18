@@ -9,13 +9,11 @@ If you want to learn more about Docker, I would recommend this [video](https://y
 The app should be ready to go once you clone the repository;
 
 Here are the steps:
-1. Download Docker
-2. Download ollama; and get the model you prefer e.g. `ollama pull llama2`
-3. Download Neo4j
-4. create a `.env` file; copy contents from `env.example` to the `.env` file; change `EMBEDDING_MODEL=ollama`, `OLLAMA_BASE_URL=http://host.docker.internal:11434`
-5. on the directory type `docker compose up --build`
-6. Go to the listed localhost and you should see the chat interface!!
-7. Don't forget to type `docker compose down` once you are done using the app.
+1. Download [Docker](https://www.docker.com/)
+2. Create a `.env` file; copy contents from `env.example` to the `.env` file.
+3. On the directory type `docker compose up --build`
+4. Go to the listed localhost and you should see the chat interface!!
+5. Don't forget to type `docker compose down` once you are done using the app.
 
 A few tips:
 1. The app worked best when I was using the Docker Desktop client so I would highly recommend that.
